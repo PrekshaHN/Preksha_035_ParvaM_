@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p{
+            color: red;
+        }
+
+        .container span{
+            font-weight: bold;
+        }
+
+        .parent > p {
+            color: blue;
+        }
+
+        lists > ul {
+            list-style-type: square;
+        }
+
+        h1 + p{
+            color: green;
+        }
+
+        h2 + ul {
+            border: 1px solid black;
+        }
+
+        .list-item + li{
+            font-size: 30px;
+            color: red;
+        }
+
+        .heading-1 ~ p {
+            color: purple;
+        }
+
+        h2 ~ ol {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+   <!-- descendant combination -->
+    <div>
+        <p>this paragraph will be red.</p>
+    </div>
+    <p>this paragraph will not be blue.</p>
+
+    <div class="container">
+    <span>this span will be bold.</span>
+</div>
+<span>this span will div bold.</span>
+
+<!-- child combination -->
+ <div class="parent">
+    <p>this paragraph will be blue.</p>
+    <div>
+        <p>this paragraph will not be blue.</p>
+    </div>
+ </div>
+ <div class="lists">
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+    </ul>
+    <div>
+        <ul>
+            <li>item A</li>
+        </ul>
+    </div>
+ </div>
+
+ <!-- adjacent sibling combination -->
+  <h1>heading 1</h1>
+  <p>this paragraph will be green.</p>
+  <p>this paragraph will not be green.</p>
+
+  <h2>subheading</h2>
+  <ul>
+    <li>item 1</li>
+    <li>item 2</li>
+  </ul>
+
+  <!-- general sibling combinator -->
+   <h1 class="heading-1">heading 1</h1>
+   <p>this pargraph will be purple.</p>
+   <p>this pargraph also will be purple.</p>
+   <h2>subheading</h2>
+
+   <h2>subheading</h2>
+   <ol>
+    <li>this list item will have a yellow background.</li>
+    <li>this list item will also have a yellow background.</li>
+   </ol>
+</body>
+</html>

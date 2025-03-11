@@ -1,0 +1,23 @@
+.parent{
+    border: 2px solid red;
+    display: flex;
+    height: 500px;
+    /*justify-content handles the
+    horizontal direction or x-plane*/
+    justify-content: space-between;
+    /* align-items handles text
+    vertical direction or y-aixs plane */
+    align-items: center;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 10px;
+}
+.child{
+    width: 170px;
+    height: 150px;
+    background-color: bisque;
+    border: 1px solid darkblue;
+    color: rgb(29, 30, 31);
+    font-size: 30px;
+}

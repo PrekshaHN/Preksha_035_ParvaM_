@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!--internal CSS-->
+        <style>
+        /*syntax:*/
+        /*selector{
+            property1: value;
+            property2: value;
+        }*/
+        h1{     /* this is element selector*/
+            color:rgb(121, 114, 189);
+            margin-top: 20px;
+            margin-bottom: 50px;
+            margin-left: 10px;
+            margin-right: 20px;
+            padding-left: 40px;
+            padding-right: 20px;
+            padding-top: 50px;
+            padding-bottom: 70px;
+            border: 5px solid brown;
+            /*syntax for shortcut property */
+            /*margin: topb right bottom left- clockwise direction*/
+            margin: 50px 20px 30px 40px;
+            /*opposite direction: top-bottom & left-rigt"*/
+            margin:30px 60px;
+            /*top right-left bottom*/
+            margin:30px 50px 70px;
+            padding:20px 30px 10px 20px;
+        }
+        p{   /* this is element selector*/    
+            color:rgb(204, 131, 35);
+        }
+        th{
+            color:rgb(201, 56, 201);
+        
+        }
+        td{
+            /* color:red;*/
+            /*rgb stands for orange, blue & black. value can be b/w 0 to 255*/
+            /*color:rgb(0, 4, 255);*/
+            /*rgba method where a stands for alpha,value from 0 to 1 in decimal number*/
+            /*color:rgba(100,155,55,0.55);*/
+            /*hrx code - hexadcimal code*/
+            color:rgb(212, 126, 12);
+            background-color: black;
+        }
+        table{
+            border-width: 100px;
+            border-color: rgb(24, 226, 226);
+            /*solid,bubble,double,groove,ridge*/
+            border-style:bubble;
+            /*shorthand property*/
+            /*syntax: border:width style color*/;
+            border: 20px solid rgb(173, 90, 107);
+            /*to make the borderd curved*/
+            /*they are top, bottom, right, left */
+            border-top:10px dashed darkcyan ; 
+            border-bottom: 10px  dashed darkcyan ;
+            border-top-right-radius: 40px;
+            border-top-left-radius: 40px;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+            to make all border
+            border-collapse: collaps;
+
+
+        }
+
+        </style>
+    </head>
+    <body>
+        <!--There are 3 types of CSS in Web Devlopment-->
+        <!--Intrernal CSS, External CSS & Inline css-->
+        <h1>This is a Heading</h1>
+        <h1>This is a second Heading</h1>
+        <p> this is a paragraph</p>
+        <!--we have different kind of slectors in CSS-->
+        <!--they are: eklement selector, class selector, ID selector-->
+        <!--element selector includes all HTML tags-->   
+        <table>
+            <tr>
+                <th>tables heading 1</th>
+                <th>tables heading 2</th>
+                <th>tables heading 3</th>
+            </tr>
+            <tr>
+                <td>tables body 11</td>
+                <td>tables body 12</td>
+                <td>tables body 13</td>
+            </tr>
+            <tr>
+                <td>tables body 21</td>
+                <td>tables body 22</td>
+                <td>tables body 23</td>
+            </tr>
+        </table>  
+    </body>
+</html>

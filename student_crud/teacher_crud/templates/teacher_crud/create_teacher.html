@@ -1,14 +1,14 @@
 
-{%extends 'library_crud/menu.html'%}
+{%extends 'teacher_crud/menu.html'%}
 
 {% block content %}
-<h1>Add Library Information</h1>
+<h1>Add Teacher Information</h1>
 <div class="container mt-5">
     <h2 class="mb-4">
         {% if update %}
-            Update Library Details
+            Update Teacher Details
         {% else %}
-            Add New Library
+            Add New Teacher
         {% endif %} 
     </h2>
     <form method="post" class="border p-4 bg-light rounded">
@@ -23,7 +23,7 @@
                 Submit
             {% endif %}
         </button>
-        <a href="{% url 'library_list' %}" class="btn btn-secondary">Back</a>
+        <a href="{% url 'teacher_list' %}" class="btn btn-secondary">Back</a>
     </form>
 </div>
 {%endblock%}
